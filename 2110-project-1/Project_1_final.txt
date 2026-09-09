@@ -1,0 +1,71 @@
+The city has become overwhelmed due to the increasing number of traffic incidents and road 
+accidents in the area. To better manage this situation, the city council has decided to 
+maintain a database containing drivers’ information, including their work are a, most 
+frequently visited locations, and whether they have received any driving tickets. If a driver 
+has a ticket, the database should store when and where the ticket was issued. 
+The council has decided to classify drivers into different categories: 
+1. Age-Based Categories 
+• Youth: 16–28 years 
+• Middle-aged: Above 28 to 50 years 
+• Senior/Old age: Above 50 years 
+2. Work-Based Categories 
+• Student 
+• Government employee 
+• Self-employed 
+• Business owner 
+• Private sector employee 
+3. Experience-Based Categories 
+• New drivers: 0–5 years of experience 
+• Moderately experienced drivers: 5–15 years 
+• Highly experienced drivers: More than 15 years 
+4. Medical Condition Categories 
+• Fit 
+• Vision impaired 
+• Upper extremity impairment 
+• Locomotor disability 
+ 
+Database Requirements 
+• The system should allow insertion of driver records at the beginning, middle, or end 
+based on search criteria (such as county). 
+• The city council observed that most accidents involve drivers who recently obtained 
+their licenses. Therefore, the system must support retrieving the N most recently 
+issued licenses, where N is user-configurable. 
+• The council also wants to monitor elderly drivers with possible medical conditions. 
+Hence, the system should support retrieving the N oldest issued licenses. 
+• When drivers migrate to another city, their records should be removed from the active 
+database and moved to a separate inactive drivers database. 
+• Because the database can grow very large, the council requires very fast search 
+performance, ideally O(1) in most cases. 
+ 
+Class design 
+Use composition and inheritance wherever they are appropriate in your design. For instance, 
+represent the date of birth using a Date class instead of a string, and represent the address 
+using an Address class rather than a string. You should design a base Driver class and derive 
+different categories of drivers from it using inheritance. ” 
+Design appropriate data members and member functions for a class to support city 
+requirements. 
+ 
+Driver Database 
+You can create an Excel sheet to store driver details. You can read data from the Excel sheet 
+or use any other method (such as a text file or database file). To begin, maintain 100 driver 
+entries in your chosen database and read from it to create the data structure. " 
+ 
+Implementation Constraints 
+• You cannot use STL containers such as: 
+o std::map 
+o std::vector 
+o std::list 
+o std::stack 
+• You may use basic types such as std::string. 
+• The program must compile and run on the lab machines. 
+• Since multiple source files will be used, you must include a Makefile for compilation. 
+ 
+Hint 
+You have already implemented the following data structures in previous assignments: 
+• Mini vector 
+• Linked list 
+• Stack 
+• Queue 
+• Hash table 
+You should reuse and enhance your own implementations to complete this project. 
+ 
